@@ -74,10 +74,10 @@ const facebookCommand = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `Ethix-MD Facebook Video Download\n\n🔍 Select the desired video quality to download.\n\n📌 Choose an option to download.\n\n`
+                text: `Kibula-MD Facebook Video Download\n\n🔍 Select the desired video quality to download.\n\n📌 Choose an option to download.\n\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Powered By Ethix-MD"
+                text: "© Powered By Sandun Mihiranga"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                  ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/fbbe1744668b44637c21a.jpg` } }, { upload: Matrix.waUploadToServer })),
@@ -107,7 +107,6 @@ const facebookCommand = async (m, Matrix) => {
       fbSearchIndex += 1; 
     } catch (error) {
       console.error("Error processing your request:", error);
-      await m.reply('Error processing your request.');
       await m.React("❌");
     }
   } else if (selectedId) { 
@@ -135,7 +134,6 @@ const facebookCommand = async (m, Matrix) => {
           }
         } catch (error) {
           console.error("Error processing your request:", error);
-          await m.reply('Error processing your request.');
           await m.React("❌");
         }
       }
