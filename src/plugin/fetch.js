@@ -6,7 +6,7 @@ const fetchData = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim();
 
-  const validCommands = ['fetch', 'get', 'api'];
+  const validCommands = ['fetch', 'get', 'x'];
 
   if (validCommands.includes(cmd)) {
     if (!/^https?:\/\//.test(text)) return m.reply('Start the *URL* with http:// or https://');
