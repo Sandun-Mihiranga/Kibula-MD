@@ -107,7 +107,7 @@ const playcommand = async (m, Matrix) => {
                 text: "© Powered By ꜱᴀɴᴅᴜɴ ᴍɪʜɪʀᴀɴɢᴀ"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
-                 ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/fbbe1744668b44637c21a.jpg` } }, { upload: Matrix.waUploadToServer })),
+                 ...(await prepareWAMessageMedia({ image: { url: `https://telegra.ph/file/71c6019160d3ca010c883.jpg` } }, { upload: Matrix.waUploadToServer })),
                 title: "",
                 gifPlayback: true,
                 subtitle: "",
