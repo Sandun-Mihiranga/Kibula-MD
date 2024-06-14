@@ -7,14 +7,14 @@ const prefixMatch = m.body.match(/^[\\/!#.]/);
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
   const text = m.body.slice(prefix.length + cmd.length).trim();
   
-  const validCommands = ['song', 'ytmp3', 'music'];
+  const validCommands = ['play', 'ytmp3', 'music'];
 
    if (validCommands.includes(cmd)) {
   
     if (!text) return m.reply('give a YT URL or search query');	 
  
 try {
-    await m.React("🕘");
+    await m.React("👀");
 
     // Check if the input is a valid YouTube URL
     const isUrl = ytdl.validateURL(text);
