@@ -128,7 +128,7 @@ const searchAPK = async (m, Matrix) => {
         const iconUrl = apkDetails.icon;
         const size = apkDetails.size;
 
-        await Matrix.sendMessage(m.from, { image: { url: iconUrl }, caption: `You selected this APK:\n\nName: ${selectedAPK.name}\nsize: ${size}\n\n> © Powered by Ethix-MD` }, { quoted: m });
+        await Matrix.sendMessage(m.from, { image: { url: iconUrl }, caption: `You selected this APK:\n\nName: ${selectedAPK.name}\nsize: ${size}\n\n> © Powered by Sandun Mihiranga` }, { quoted: m });
 
   
         const apkMessage = {
